@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  margin: 0;
+}
+
+.main {
+  height: 100vh;
+  background-image: url('./assets/images/background.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 52%;
+  background-color: rgba(2, 15, 32, 0.4);
+  background-blend-mode: overlay;
+}
+
+.main__buttons {
+  position: relative;
+  max-width: 1280px;
+  height: 100%;
+  margin: auto;
+}
+
+.button {
+  position: absolute;
+  width: 41px;
+  height: 41px;
+  padding: 0;
+  border: none;
+  border-radius: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(56, 119, 238, 0.7);
+  transition: all 0.4s ease-in-out;
+}
+
+.button.active {
+  width: auto;
+  gap: 15px;
+  padding: 11px 15px;
+}
+
+.icon {
+  display: block;
+  height: 15px;
+  width: 15px;
+  background-image: url('./assets/icons/plus.svg');
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: all 0.4s ease-in-out;
+}
+
+.button.active .icon {
+  background-image: url('./assets/icons/minus.svg');
+}
+
+.button__text {
+  color: #FFFFFF;
+  font-size: 1.4rem;
+  line-height: 1.61rem;
+}
+
+.button_colored {
+  background-color: rgba(106, 191, 75, 0.7);
+}
+
+.button:first-child {
+  top: 20%;
+  left: 82%;
+}
+
+.button:nth-child(2) {
+  top: 26%;
+  left: 20%;
+}
+
+.button:nth-child(3) {
+  top: 38%;
+  left: 65%;
+}
+
+.button:nth-child(4) {
+  top: 44%;
+  left: 85%;
+}
+
+.button:nth-child(5) {
+  top: 45%;
+  left: 29%;
+}
+
+.button:nth-child(6) {
+  top: 58%;
+  left: 60%;
+}
+
+.button:nth-child(7) {
+  top: 62%;
+  left: 77%;
+}
+
+.button:nth-child(8) {
+  top: 66%;
+  right: 0;
+}
+
+.button:nth-child(9) {
+  top: 66%;
+  left: 10%;
+}
+
+.button:last-child {
+  top: 73%;
+  left: 62%;
+}
